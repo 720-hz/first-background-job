@@ -1,0 +1,19 @@
+{
+  "name": "first-background-job",
+  "version": "1.0.0",
+  "description": "Accept fast, work in the background, report status — a small report API whose slow step (a real AI call) runs as an Inngest background job.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "inngest": "npx inngest-cli@latest dev -u http://localhost:3000/api/inngest"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "inngest": "^4.21.0",
+    "openai": "^7.23.0"
+  }
+}
